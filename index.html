@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destrava Pós-Trabalho</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Montserrat"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 40px -2px rgba(0, 0, 0, 0.05)',
+                        'card': '0 10px 40px -10px rgba(0,0,0,0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #1f2937; /* slate-800 equivalent */
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-100 selection:text-brand-900">
+
+    <!-- HERO SECTION REDESIGN -->
+    <!-- HERO SECTION REDESIGN -->
+    <header class="relative pt-12 lg:pt-16 overflow-hidden bg-white bg-grid">
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            
+            <!-- TOP: Title & Subtitle Centered -->
+            <div class="text-center max-w-4xl mx-auto mb-10 relative z-20">
+                <img src="logo.png" alt="Destrava Pós-Trabalho: Só 3 minutos por dia" class="w-full max-w-2xl mx-auto mb-6 h-auto drop-shadow-sm">
+                
+                <p class="text-lg md:text-2xl text-slate-600 font-medium text-balance leading-relaxed">
+                    O alívio rápido de 3 minutos para acabar com a dor nas costas e a rigidez do expediente.
+                </p>
+            </div>
+            
+            <!-- BOTTOM: Image Left, Features Right -->
+            <div class="flex flex-col lg:flex-row items-center justify-between relative gap-12 lg:gap-8 pb-12 lg:pb-16">
+                
+                <!-- Left: Hero Image (Vector illustration perfectly integrated with white background) -->
+                <div class="w-full lg:w-1/2 relative z-10 flex justify-center">
+                    <img src="hero_antes_depois_final.jpg?v=4" alt="Antes e Depois do Destrava Pós-Trabalho" class="w-full max-w-2xl h-auto mix-blend-multiply">
+                </div>
+
+                <!-- Right: Features & Button -->
+                <div class="w-full lg:w-1/2 relative z-30 flex flex-col gap-5">
+                    
+                    <!-- Feature 1 -->
+                    <div class="bg-white/90 backdrop-blur p-5 lg:p-6 rounded-3xl shadow-lg border border-slate-100 flex items-center gap-5 transform hover:-translate-y-1 transition-transform">
+                        <div class="w-14 h-14 rounded-full bg-brand-50 flex items-center justify-center flex-shrink-0 text-brand-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <div>
+                            <strong class="block text-slate-900 text-base md:text-lg">Protocolo em Vídeo Completo</strong>
+                            <span class="text-sm md:text-base text-slate-500">Passo a passo guiado.</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature 2 -->
+                    <div class="bg-white/90 backdrop-blur p-5 lg:p-6 rounded-3xl shadow-lg border border-slate-100 flex items-center gap-5 transform hover:-translate-y-1 transition-transform">
+                        <div class="w-14 h-14 rounded-full bg-brand-50 flex items-center justify-center flex-shrink-0 text-brand-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        </div>
+                        <div>
+                            <strong class="block text-slate-900 text-base md:text-lg">PDF Visual e Resumo de Bolso</strong>
+                            <span class="text-sm md:text-base text-slate-500">Para consultar no celular.</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature 3 -->
+                    <div class="bg-white/90 backdrop-blur p-5 lg:p-6 rounded-3xl shadow-lg border border-slate-100 flex items-center gap-5 transform hover:-translate-y-1 transition-transform">
+                        <div class="w-14 h-14 rounded-full bg-brand-50 flex items-center justify-center flex-shrink-0 text-brand-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                        </div>
+                        <div>
+                            <strong class="block text-slate-900 text-base md:text-lg">Rotina Expressa</strong>
+                            <span class="text-sm md:text-base text-slate-500">Apenas 3 minutos por dia.</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <div class="mt-4">
+                        <a href="#oferta" class="inline-flex items-center justify-center w-full px-8 py-5 text-xl font-bold text-white bg-brand-700 rounded-[2rem] shadow-xl hover:bg-brand-800 hover:-translate-y-1 transition-all duration-300">
+                            Quero Destravar Meu Corpo
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- Trust Bar (Full Width at Bottom) -->
+        <div class="w-full bg-brand-900 py-6 lg:py-8 relative z-20">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center md:justify-around gap-6 md:gap-12 text-white">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                    </div>
+                    <div class="text-left">
+                        <strong class="block text-lg leading-tight">Garantia Total de 7 Dias.</strong>
+                        <span class="text-brand-200 text-sm">Compra 100% segura.</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:block w-px h-12 bg-brand-700"></div>
+                
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </div>
+                    <div class="text-left">
+                        <strong class="block text-lg leading-tight">Acesso imediato</strong>
+                        <span class="text-brand-200 text-sm">enviado para o seu e-mail.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- VILÃO -->
+        <section class="py-24 px-6 lg:px-8 bg-white">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6 text-balance">
+                        O grande culpado pelo seu cansaço <span class="text-slate-400 line-through decoration-slate-300">não é o seu trabalho.</span>
+                    </h2>
+                    <p class="text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
+                        O verdadeiro vilão é o mercado fitness tradicional que tenta te empurrar a mentira de que, depois de 9 horas sentado, o que você precisa é:
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                    <div class="p-8 rounded-3xl bg-slate-50 text-center transition-all hover:bg-slate-100">
+                        <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-slate-700"><path d="m6.5 6.5 11 11"/><path d="m21 21-1-1"/><path d="m3 3 1 1"/><path d="m18 22 4-4"/><path d="m2 6 4-4"/><path d="m3 10 7-7"/><path d="m14 21 7-7"/></svg>
+                        </div>
+                        <p class="text-slate-600 font-medium leading-relaxed">Ir para uma academia cheia de luzes fortes.</p>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-slate-50 text-center transition-all hover:bg-slate-100">
+                        <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-slate-700"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                        </div>
+                        <p class="text-slate-600 font-medium leading-relaxed">Ficar 1 hora levantando peso e suando a camisa.</p>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-slate-50 text-center transition-all hover:bg-slate-100">
+                        <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-slate-700"><rect width="16" height="10" x="2" y="7" rx="2" ry="2"/><line x1="22" x2="22" y1="11" y2="13"/><line x1="6" x2="6" y1="11" y2="13"/></svg>
+                        </div>
+                        <p class="text-slate-600 font-medium leading-relaxed">Seguir uma rotina longa que exige energia mental.</p>
+                    </div>
+                </div>
+
+                <div class="bg-red-50/50 rounded-3xl p-8 sm:p-10 border border-red-100 text-center">
+                    <p class="text-lg sm:text-xl text-slate-700 leading-relaxed text-balance">
+                        Eles tratam você como se fosse um atleta de alta performance com tempo livre. Quando você falha, você se culpa por "falta de disciplina". Mas a verdade é outra: <span class="font-bold text-red-600">você não tem falta de disciplina, você está exausto.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CAUSA RAIZ -->
+        <section class="py-24 px-6 lg:px-8 bg-brand-50 border-t border-brand-100">
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
+                <div class="w-full md:w-1/2">
+                    <div class="bg-white p-2 rounded-[2rem] shadow-card relative group">
+                        <img src="root_cause.jpg" alt="A Cadeira-Trava" class="w-full h-auto rounded-[1.5rem] mix-blend-multiply transition-transform duration-500 group-hover:scale-[1.02]">
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold tracking-widest uppercase mb-6">
+                        A Causa Raiz
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6 leading-tight">
+                        A Síndrome da <br/><span class="text-brand-700">"Cadeira-Trava"</span>
+                    </h2>
+                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                        O que acontece com as suas costas todos os dias não é uma lesão misteriosa. É <strong>física básica e biologia do trabalho moderno.</strong>
+                    </p>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Enquanto você foca na tela, os músculos da sua lombar e do seu quadril passam horas estáticos, comprimidos e sob tensão. Quando você levanta, os tecidos estão <strong>literalmente colados</strong>.
+                    </p>
+                    
+                    <div class="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-sm border border-slate-100">
+                        <div class="mt-1 flex-shrink-0 text-brand-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        </div>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                            Tentar resolver isso com alongamentos aleatórios ou ignorando a dor cria um ciclo vicioso. No dia seguinte, você acorda mais travado. E no outro, mais ainda.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- O CAMINHO ÚNICO -->
+        <section class="py-32 px-6 lg:px-8 bg-brand-900 text-white text-center">
+            <div class="max-w-3xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-800 text-brand-100 text-xs font-bold tracking-widest uppercase mb-8">
+                    O Caminho Único
+                </div>
+                <h2 class="text-4xl sm:text-5xl font-bold mb-8 leading-tight">O Ritual de Transição</h2>
+                <p class="text-xl text-brand-100/80 leading-relaxed mb-12 text-balance">
+                    Existe apenas um jeito de quebrar esse ciclo sem gastar energia: <span class="text-white">desligar o modo "alerta de trabalho"</span> do sistema nervoso através de uma descompressão guiada.
+                </p>
+                <div class="p-8 sm:p-10 bg-brand-800/50 rounded-[2rem] border border-brand-700/50 backdrop-blur-sm">
+                    <p class="text-lg sm:text-xl font-medium text-brand-50 leading-relaxed mb-8">
+                        Você não precisa de um treino longo. Você precisa de um atalho cirúrgico que faça exatamente o oposto do que a cadeira fez com você o dia inteiro, em tempo recorde.
+                    </p>
+                    <p class="text-brand-400 font-bold tracking-wide">
+                        É EXATAMENTE PARA ISSO QUE O DESTRAVA PÓS-TRABALHO FOI CONSTRUÍDO.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- O DESENVOLVIMENTO (COM IMAGENS) -->
+        <section class="py-32 px-6 lg:px-8 bg-white" id="desenvolvimento">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-24">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">O que acontece na prática</h2>
+                    <p class="text-xl text-slate-500 max-w-2xl mx-auto">
+                        Em vez de adivinhar o que fazer, você segue um caminho linear e visual de 3 etapas simples ao cruzar a porta de casa.
+                    </p>
+                </div>
+                
+                <div class="space-y-32">
+                    <!-- Etapa 1 -->
+                    <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+                        <div class="w-full md:w-1/2 order-2 md:order-1">
+                            <div class="mb-4 text-brand-700 font-bold tracking-widest uppercase text-sm">Passo 1 • Minutos 1 a 3</div>
+                            <h3 class="text-3xl font-bold text-slate-900 mb-6">A Descompressão Imediata</h3>
+                            <p class="text-lg text-slate-600 leading-relaxed">
+                                Você solta a tensão acumulada na torácica e na lombar logo na primeira posição, sentindo o alívio imediato na primeira respiração funda. O corpo começa a derreter no chão, anulando o peso do dia.
+                            </p>
+                        </div>
+                        <div class="w-full md:w-1/2 order-1 md:order-2">
+                            <div class="bg-brand-50 p-8 rounded-[3rem] transition-all hover:scale-[1.02] duration-500">
+                                <img src="step1.jpg?v=2" alt="A Descompressão Imediata" class="w-full h-auto mix-blend-multiply">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Etapa 2 -->
+                    <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+                        <div class="w-full md:w-1/2">
+                            <div class="bg-brand-50 p-8 rounded-[3rem] transition-all hover:scale-[1.02] duration-500">
+                                <img src="step2.jpg?v=2" alt="A Desmobilização do Quadril" class="w-full h-auto mix-blend-multiply">
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <div class="mb-4 text-brand-700 font-bold tracking-widest uppercase text-sm">Passo 2 • Minutos 4 a 7</div>
+                            <h3 class="text-3xl font-bold text-slate-900 mb-6">A Desmobilização do Quadril</h3>
+                            <p class="text-lg text-slate-600 leading-relaxed">
+                                Você destrava a região que segura o peso do seu corpo o dia todo. Ao liberar o quadril, você descarrega automaticamente a pressão esmagadora das costas e recupera a mobilidade perdida.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Etapa 3 -->
+                    <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+                        <div class="w-full md:w-1/2 order-2 md:order-1">
+                            <div class="mb-4 text-brand-700 font-bold tracking-widest uppercase text-sm">Passo 3 • Minutos 8 a 10</div>
+                            <h3 class="text-3xl font-bold text-slate-900 mb-6">O Fechamento do Ciclo</h3>
+                            <p class="text-lg text-slate-600 leading-relaxed">
+                                Uma ativação leve e inteligente que manda o comando biológico para o cérebro de que o expediente acabou. Você levanta do chão como uma pessoa nova, pronta para descansar de verdade.
+                            </p>
+                        </div>
+                        <div class="w-full md:w-1/2 order-1 md:order-2">
+                            <div class="bg-brand-50 p-8 rounded-[3rem] transition-all hover:scale-[1.02] duration-500">
+                                <img src="step3.jpg?v=2" alt="O Fechamento do Ciclo" class="w-full h-auto mix-blend-multiply">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emergency Alert -->
+                <div class="mt-32 flex flex-col sm:flex-row items-center justify-between p-8 sm:p-10 bg-brand-50 rounded-3xl border border-brand-100">
+                    <div class="flex items-center gap-6 mb-6 sm:mb-0">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm flex-shrink-0 text-brand-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900 mb-1">E se o dia foi caótico e você só tem 5 minutos?</h4>
+                            <p class="text-slate-600">
+                                Há um <strong>modo de emergência</strong> para os piores dias, garantindo o alívio sem tomar seu tempo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BÔNUS -->
+        <section class="py-24 px-6 lg:px-8 bg-white border-t border-slate-100">
+            <div class="max-w-5xl mx-auto bg-slate-50 rounded-[3rem] p-10 sm:p-16 border border-slate-100 flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 text-white text-xs font-bold tracking-widest uppercase mb-6">
+                        Presente Especial
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+                        O Guia Anti-Cadeira
+                    </h2>
+                    <p class="text-lg text-brand-700 font-bold mb-6">3 Mini-Pausas de 1 Minuto para o Escritório</p>
+                    
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Quem disse que você precisa esperar chegar em casa para começar a aliviar? Este bônus traz três micro-movimentos discretos que você faz <strong>sentado na sua própria cadeira</strong> para impedir que o corpo "encaixote" durante o expediente.
+                    </p>
+                    
+                    <div class="inline-flex items-center gap-4 text-left p-6 bg-white rounded-2xl shadow-sm border border-slate-100">
+                        <div class="w-12 h-12 bg-brand-50 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-600"><path d="M20 6 9 17l-5-5"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 line-through text-sm">Valor original: R$ 47,00</p>
+                            <p class="text-lg font-bold text-brand-700">Totalmente Grátis hoje</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="bonus_mockup_final.jpg" alt="O Guia Anti-Cadeira Mockup" class="w-full h-auto shadow-2xl rounded-3xl transition-transform duration-500 hover:scale-[1.02]">
+                </div>
+            </div>
+        </section>
+
+        <!-- OFERTA E PREÇO -->
+        <section class="py-32 px-6 lg:px-8 bg-slate-50" id="oferta">
+            <div class="max-w-5xl mx-auto text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Escolha o seu plano</h2>
+                <p class="text-lg text-slate-500 mb-16 max-w-2xl mx-auto">Comece a destravar o seu corpo hoje mesmo com a opção que melhor se encaixa na sua rotina.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    
+                    <!-- Plano Básico -->
+                    <div class="bg-white rounded-[2.5rem] shadow-sm border border-slate-200 overflow-hidden flex flex-col h-full hover:shadow-md transition-shadow">
+                        <div class="p-8 sm:p-10 border-b border-slate-100 flex-grow">
+                            <h3 class="text-2xl font-bold text-slate-900 mb-2">Pacote Essencial</h3>
+                            <p class="text-slate-500 text-sm mb-6">O protocolo central para alívio diário.</p>
+                            
+                            <div class="flex items-start justify-center text-slate-900 font-bold tracking-tight mb-2">
+                                <span class="text-2xl mt-2 mr-1 text-slate-400">R$</span>
+                                <span class="text-6xl leading-none">4,90</span>
+                            </div>
+                            <p class="text-xs text-slate-400 mb-8 uppercase tracking-widest font-semibold">Pagamento Único</p>
+                            
+                            <a href="#" class="inline-flex items-center justify-center w-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-4 px-6 rounded-2xl transition-all duration-300 text-lg">
+                                Escolher Essencial
+                            </a>
+                        </div>
+                        
+                        <div class="bg-slate-50 p-8 text-left">
+                            <ul class="space-y-4">
+                                <li class="flex items-start text-slate-600 text-sm font-medium">
+                                    <svg class="h-5 w-5 text-slate-400 mr-3 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                    Protocolo em Vídeo (3 Etapas)
+                                </li>
+                                <li class="flex items-start text-slate-600 text-sm font-medium">
+                                    <svg class="h-5 w-5 text-slate-400 mr-3 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                    PDF Visual de Bolso
+                                </li>
+                                <li class="flex items-start text-slate-400 text-sm font-medium opacity-50">
+                                    <svg class="h-5 w-5 text-slate-300 mr-3 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                                    Checklist de 7 Dias
+                                </li>
+                                <li class="flex items-start text-slate-400 text-sm font-medium opacity-50">
+                                    <svg class="h-5 w-5 text-slate-300 mr-3 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                                    Bônus: Guia Anti-Cadeira
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Plano VIP (Recomendado) -->
+                    <div class="bg-white rounded-[2.5rem] shadow-xl border-2 border-brand-500 overflow-hidden flex flex-col h-full relative transform md:-translate-y-4">
+                        <div class="absolute top-0 inset-x-0 bg-brand-600 text-white text-xs font-bold uppercase tracking-widest py-1.5 text-center">
+                            MAIS ESCOLHIDO
+                        </div>
+                        
+                        <div class="p-8 sm:p-10 border-b border-slate-100 flex-grow mt-4">
+                            <h3 class="text-2xl font-bold text-slate-900 mb-2">Acesso VIP Total</h3>
+                            <p class="text-slate-500 text-sm mb-6">O pacote completo com todos os bônus.</p>
+                            
+                            <div class="flex items-start justify-center text-slate-900 font-bold tracking-tight mb-2">
+                                <span class="text-2xl mt-2 mr-1 text-slate-400">R$</span>
+                                <span class="text-6xl leading-none">9,90</span>
+                            </div>
+                            <p class="text-xs text-slate-400 mb-8 uppercase tracking-widest font-semibold">Pagamento Único</p>
+                            
+                            <a href="#" class="inline-flex items-center justify-center w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-4 px-6 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-lg">
+                                Desbloquear VIP Agora
+                            </a>
+                            <div class="flex items-center justify-center space-x-2 mt-4 text-xs text-slate-400 font-medium">
+                                <svg class="h-4 w-4 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                                <span>Pagamento 100% Seguro</span>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-brand-50 p-8 text-left">
+                            <ul class="space-y-4">
+                                <li class="flex items-start text-slate-800 text-sm font-bold">
+                                    <svg class="h-5 w-5 text-brand-600 mr-3 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                    Tudo do Pacote Essencial
+                                </li>
+                                <li class="flex items-start text-slate-700 text-sm font-medium">
+                                    <svg class="h-5 w-5 text-brand-600 mr-3 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                    Checklist Prático de 7 Dias
+                                </li>
+                                <li class="flex items-start text-slate-700 text-sm font-medium">
+                                    <svg class="h-5 w-5 text-brand-600 mr-3 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                    Bônus: Guia Anti-Cadeira
+                                </li>
+                                <li class="flex items-start text-slate-700 text-sm font-medium">
+                                    <svg class="h-5 w-5 text-brand-600 mr-3 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                    Acesso Vitalício Garantido
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <p class="text-sm text-slate-400 mt-12">O valor real de todos os itens somados seria de R$ 220,00.</p>
+            </div>
+        </section>
+
+        <!-- GARANTIA -->
+        <section class="py-24 px-6 lg:px-8 bg-white border-t border-slate-100">
+            <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
+                <div class="w-32 h-32 flex-shrink-0 mx-auto md:mx-0">
+                    <div class="w-full h-full rounded-full bg-brand-50 flex items-center justify-center border border-brand-100 text-brand-700">
+                        <div class="text-center">
+                            <span class="block text-4xl font-bold leading-none">7</span>
+                            <span class="block text-xs font-bold uppercase tracking-widest mt-2">Dias</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-slate-900">Garantia de Alívio e Satisfação</h2>
+                    <p class="text-slate-600 leading-relaxed text-balance">
+                        Tenho tanta certeza de que esses minutos vão transformar a sua chegada em casa que te dou uma garantia incondicional. Compre o Destrava Pós-Trabalho, teste nos primeiros dias. Se achar que não ajudou, basta mandar um e-mail dentro de 7 dias e devolvemos 100% do seu dinheiro. Sem letras miúdas.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-900 py-12 text-center text-brand-100/50">
+        <p class="text-sm font-medium">&copy; 2026 Destrava Pós-Trabalho. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
